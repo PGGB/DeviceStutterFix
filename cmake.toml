@@ -1,0 +1,12 @@
+# Reference: https://build-cpp.github.io/cmkr/cmake-toml
+[project]
+name = "REF_DeviceStutterFix"
+
+[target.plugin]
+type = "shared"
+sources = ["src/*.cpp", "src/*.hpp"]
+include-directories = ["REFramework/include"]
+compile-features = ["cxx_std_20"]
+
+[target.plugin.properties]
+OUTPUT_NAME = "REF_DeviceStutterFix"
